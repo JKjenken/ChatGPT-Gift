@@ -501,7 +501,7 @@ export const useChatStore = create<ChatStore>()(
           api.llm.chat({
             messages: topicMessages,
             config: {
-              model: "gpt-3.5-turbo",
+              model: "gpt-3.5-turbo-1106",
             },
             onFinish(message) {
               get().updateCurrentSession(
@@ -555,7 +555,7 @@ export const useChatStore = create<ChatStore>()(
                 date: "",
               }),
             ),
-            config: { ...modelConfig, stream: true, model: "gpt-3.5-turbo" },
+            config: { ...modelConfig, stream: true, model: "gpt-3.5-turbo-1106" },
             onUpdate(message) {
               session.memoryPrompt = message;
             },
