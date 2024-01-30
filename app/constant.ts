@@ -69,7 +69,7 @@ export const DEFAULT_MODELS = [
     available: true,
   },
   {
-    name: "gpt-4-1106-preview",
+    name: "gpt-4-0125-preview",
     available: true,
   },
 ] as const;
